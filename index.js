@@ -9,4 +9,15 @@ function getComputerChoice() {
 
 const options = ["rock", "paper", "scissors"]
 
-console.log(getComputerChoice())
+
+
+// Prompt the user to get the human choice
+function getHumanChoice() {
+    let userChoice = prompt("Choose one: rock, paper, scissors...")
+    return userChoice
+}
+
+// Test in Browser Console
+console.log(`Computer has chosen ${getComputerChoice()}`)
+console.log(`User has chosen ${getHumanChoice()}`)
+
