@@ -38,12 +38,31 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+// Create a function to play the entire game with 5 rounds
+function playGame() {
+    playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
+    if (humanScore > computerScore) {
+        console.log("You win the game")
+        console.log(`Score: ${humanScore} vs ${computerScore}`)
+    }else if (humanScore < computerScore) {
+        console.log("You lose the game")
+        console.log(`Score: ${humanScore} vs ${computerScore}`)
+    }else {
+        console.log("Draw!")
+        console.log(`Score: ${humanScore} vs ${computerScore}`)
+    }
+}
+
 // Variables
 const options = ["rock", "paper", "scissors"]
 let humanScore = 0
 let computerScore = 0
 
 // Test in Browser Console
-playRound(getHumanChoice(), getComputerChoice())
+playGame()
 console.log(`Human score: ${humanScore}`)
 console.log(`Computer score: ${computerScore}`)
