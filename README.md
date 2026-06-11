@@ -5,8 +5,8 @@ Rock beats scissors, scissors beat paper, and paper beats rock.
 Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
 Use rock, paper, scissors to settle minor decisions or simply play to pass the time.
 ### Rock
-!["Hand signals and rules: rock"](https://www.wikihow.com/Play-Rock,-Paper,-Scissors#/Image:Play-Rock,-Paper,-Scissors-Step-6-Version-4.jpg)
+!["Hand signals and rules: rock"](https://www.wikihow.com/images/thumb/1/1e/Play-Rock%2C-Paper%2C-Scissors-Step-6-Version-4.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-6-Version-4.jpg.webp)
 ### Paper
-!["Hand signals and rules: paper"](https://www.wikihow.com/Play-Rock,-Paper,-Scissors#/Image:Play-Rock,-Paper,-Scissors-Step-7-Version-4.jpg)
+!["Hand signals and rules: paper"](https://www.wikihow.com/images/thumb/4/49/Play-Rock%2C-Paper%2C-Scissors-Step-7-Version-4.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-7-Version-4.jpg.webp)
 ### Scissors
-!["Hand signals and rules: scissors"](https://www.wikihow.com/Play-Rock,-Paper,-Scissors#/Image:Play-Rock,-Paper,-Scissors-Step-8-Version-4.jpg)
+!["Hand signals and rules: scissors"](https://www.wikihow.com/images/thumb/b/b2/Play-Rock%2C-Paper%2C-Scissors-Step-8-Version-4.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-8-Version-4.jpg.webp)
