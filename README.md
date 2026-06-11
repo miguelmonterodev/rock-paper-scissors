@@ -10,3 +10,6 @@ Use rock, paper, scissors to settle minor decisions or simply play to pass the t
 !["Hand signals and rules: paper"](https://www.wikihow.com/images/thumb/4/49/Play-Rock%2C-Paper%2C-Scissors-Step-7-Version-4.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-7-Version-4.jpg.webp)
 ### Scissors
 !["Hand signals and rules: scissors"](https://www.wikihow.com/images/thumb/b/b2/Play-Rock%2C-Paper%2C-Scissors-Step-8-Version-4.jpg/v4-728px-Play-Rock%2C-Paper%2C-Scissors-Step-8-Version-4.jpg.webp)
+
+[learn more](https://www.wikihow.com/Play-Rock,-Paper,-Scissors)
+
