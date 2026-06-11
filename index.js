@@ -7,17 +7,43 @@ function getComputerChoice() {
     return options[choiceIndex]
 }
 
-const options = ["rock", "paper", "scissors"]
-
-
-
 // Prompt the user to get the human choice
 function getHumanChoice() {
     let userChoice = prompt("Choose one: rock, paper, scissors...")
-    return userChoice
+    return userChoice.toLowerCase()
 }
 
-// Test in Browser Console
-console.log(`Computer has chosen ${getComputerChoice()}`)
-console.log(`User has chosen ${getHumanChoice()}`)
+// Play a single round
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice == computerChoice) {
+        console.log(`It's a draw! You both have chosen ${humanChoice}`)
+    }else if (humanChoice == "rock" && computerChoice == "paper") {
+        console.log("You lose! Paper beats rock")
+        computerScore++
+    }else if (humanChoice == "rock" && computerChoice == "scissors") {
+        console.log("You win! Rock beats scissors")
+        humanScore++
+    }else if (humanChoice == "paper" && computerChoice == "rock") {
+        console.log("You win! Paper beats rock")
+        humanScore++
+    }else if (humanChoice == "paper" && computerChoice == "scissors") {
+        console.log("You lose! Scissors beats paper")
+        computerScore++
+    }else if (humanChoice == "scissors" && computerChoice == "paper") {
+        console.log("You win! Scissors beats paper")
+        humanScore++
+    }else if (humanChoice == "scissors" && computerChoice == "rock") {
+        console.log("You lose! Rock beats scissors")
+        computerScore++
+    }
+}
 
+// Variables
+const options = ["rock", "paper", "scissors"]
+let humanScore = 0
+let computerScore = 0
+
+// Test in Browser Console
+playRound(getHumanChoice(), getComputerChoice())
+console.log(`Human score: ${humanScore}`)
+console.log(`Computer score: ${computerScore}`)
