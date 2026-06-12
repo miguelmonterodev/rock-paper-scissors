@@ -44,6 +44,16 @@ let humanScore = 0
 let computerScore = 0
 
 // Test in Browser Console
-playGame()
 console.log(`Human score: ${humanScore}`)
 console.log(`Computer score: ${computerScore}`)
+
+// DOM Manipulation
+const btn = document.querySelectorAll(".btn")
+
+for(let i=0; i<btn.length; i++) {
+    btn[i].addEventListener('click', function(e) {
+        // console.log(e.target.textContent.toLowerCase())
+        let humanChoice = e.target.textContent.toLowerCase()
+        playRound(humanChoice, getComputerChoice())
+})
+}
