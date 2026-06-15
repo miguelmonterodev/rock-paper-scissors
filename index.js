@@ -90,3 +90,5 @@ for(let i=0; i<btn.length; i++) {
 })
 }
 
+document.querySelector('body').style.textAlign = "center"
+document.querySelector('body').style.marginTop = "50px" 
