@@ -45,6 +45,24 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+// Check winner and reset score when the human or computer score is equal to 5
+function checkWinner(human, computer) {
+    if (human == 5 && computer < 5) {
+        scoreElement.textContent = "You win!!"
+        resetScore()
+    } else if (computer == 5 && human < 5) {
+        scoreElement.textContent = "Sorry, you lose! The computer score 5 points."
+        resetScore()
+    } else {
+        scoreElement.textContent = `Score: ${humanScore} vs ${computerScore}`
+    }
+}
+
+function resetScore() {
+    humanScore = 0
+    computerScore = 0
+}
+
 // Variables
 const options = ["rock", "paper", "scissors"]
 let humanScore = 0
@@ -58,13 +76,17 @@ console.log(`Computer score: ${computerScore}`)
 const btn = document.querySelectorAll(".btn")
 const messageContainer = document.querySelector(".result")
 const messageText = document.createElement("p")
+const scoreElement = document.createElement("p")
 
 messageContainer.appendChild(messageText)
+messageContainer.appendChild(scoreElement)
 
 for(let i=0; i<btn.length; i++) {
     btn[i].addEventListener('click', function(e) {
         // console.log(e.target.textContent.toLowerCase())
         let humanChoice = e.target.textContent.toLowerCase()
-        playRound(humanChoice, getComputerChoice())
+        playRound(humanChoice, getComputerChoice()) 
+        checkWinner(humanScore, computerScore)
 })
 }
+
