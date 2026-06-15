@@ -17,23 +17,30 @@ function getHumanChoice() {
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
         console.log(`It's a draw! You both have chosen ${humanChoice}`)
+        messageText.textContent = `It's a draw! You both have chosen ${humanChoice}`
     }else if (humanChoice == "rock" && computerChoice == "paper") {
         console.log("You lose! Paper beats rock")
+        messageText.textContent = "You lose! Paper beats rock"
         computerScore++
     }else if (humanChoice == "rock" && computerChoice == "scissors") {
         console.log("You win! Rock beats scissors")
+        messageText.textContent = "You win! Rock beats scissors"
         humanScore++
     }else if (humanChoice == "paper" && computerChoice == "rock") {
         console.log("You win! Paper beats rock")
+        messageText.textContent = "You win! Paper beats rock"
         humanScore++
     }else if (humanChoice == "paper" && computerChoice == "scissors") {
         console.log("You lose! Scissors beats paper")
+        messageText.textContent = "You lose! Scissors beats paper"
         computerScore++
     }else if (humanChoice == "scissors" && computerChoice == "paper") {
         console.log("You win! Scissors beats paper")
+        messageText.textContent = "You win! Scissors beats paper"
         humanScore++
     }else if (humanChoice == "scissors" && computerChoice == "rock") {
         console.log("You lose! Rock beats scissors")
+        messageText.textContent = "You lose! Rock beats scissors"
         computerScore++
     }
 }
@@ -49,6 +56,10 @@ console.log(`Computer score: ${computerScore}`)
 
 // DOM Manipulation
 const btn = document.querySelectorAll(".btn")
+const messageContainer = document.querySelector(".result")
+const messageText = document.createElement("p")
+
+messageContainer.appendChild(messageText)
 
 for(let i=0; i<btn.length; i++) {
     btn[i].addEventListener('click', function(e) {
